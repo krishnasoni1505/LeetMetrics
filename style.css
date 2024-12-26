@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: #1A1A1A;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    font-size: 2rem;
+}
+.text1{
+    font-size: 1.2rem;
+}
+.container{
+    background-color:  #282828;
+    padding: 2rem 3rem 1rem 3rem;
+    border-radius: 1rem;
+}
+#user{
+    width: 70%;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+    color: #1D263B;
+}
+#searchbtn{
+    width: 25%;
+    background-color: #1A1A1A;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+}
+.box{
+    padding: 1rem 0rem 1rem 0rem;
+}
+.metrics{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 2rem 0rem 1rem 0rem;
+    text-align: center;
+}
+.metrics p{
+    padding-top: 1rem;
+    height: 2rem;
+}
+.chart{
+    height: 120px;
+    width: 120px;
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #1A1A1A;
+}
+#easy{
+    background: conic-gradient( #1CBABA  var(--progress-degree, 0%), #264545 0%);
+}
+#medium{
+    background: conic-gradient( #FFB700 var(--progress-degree, 0%), #534520 0%);
+}
+#hard{
+    background: conic-gradient( #F63737 var(--progress-degree, 0%), #512B2B 0%);
+}

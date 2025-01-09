@@ -57,11 +57,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 throw new Error("Unable to fetch User details.")
             }
             const data = await response.json(); 
+            if(data.status == "error")
+                throw new Error("User not found.")
             console.log("Loggin Details: ", data);
             updateStats(data);
         }
         catch(error){
-            alert("No data Found.");
+            alert(error);
         }
         finally {
             searchbtn.textContent="Search";
